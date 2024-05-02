@@ -103,17 +103,17 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>Welcome to Gamba v2 👋</h1>
+        <h1>Welcome to Frogs on Gamble 👋</h1>
         <p>
           A fair, simple and decentralized casino on Solana.
         </p>
       </div>
       <Buttons>
-        <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
-          👨‍💻 Build your own
+        <button onClick={() => window.open('https://twitter.com/frogsongamble', '_blank')}>
+          🐸 Follow us Twitter
         </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
+        <button onClick={() => window.open('https://discord.gg/VPWMksvQ', '_blank')}>
+          💬 Join Discord
         </button>
       </Buttons>
     </Welcome>
