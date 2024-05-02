@@ -108,7 +108,6 @@ export function WelcomeBanner() {
           A fair, simple and decentralized casino on Solana.
         </p>
       </div>
-      <div class="sc-hIPCWT eALPYr"><img src="/logo.svg"></div>
       <Buttons>
         <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
           👨‍💻 Build your own
