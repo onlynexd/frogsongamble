@@ -3,28 +3,23 @@ import styled from 'styled-components'
 import { EXPLORER_URL } from '../../constants'
 
 const Buttons = styled.div`
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; // Centering the buttons horizontally
   gap: 10px;
+  padding: 20px 0; // Adding padding for spacing
 
   @media (min-width: 800px) {
-    height: 100%;
+    flex-direction: row; // Buttons side by side on larger screens
   }
 
   @media (max-width: 800px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; // Buttons side by side on smaller screens
     width: 100%;
-    padding-top: 0!important;
   }
 
   & > button {
     border: none;
-    width: 100%;
+    min-width: 150px; // Ensuring buttons have a minimum width
     border-radius: 10px;
     padding: 10px;
     background: #ffffffdf;
@@ -38,84 +33,39 @@ const Buttons = styled.div`
 `
 
 const Welcome = styled.div`
-  @keyframes welcome-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes backgroundGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
-  background-size: 300% 300%;
-  animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
+  background: url('banner.png') no-repeat center center;
+  background-size: cover;
   border-radius: 10px;
   position: relative;
-  overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column; // Changed to column to stack elements vertically
+  align-items: center; // Centering content horizontally
   justify-content: center;
-  flex-direction: column;
+  min-height: 300px; // Setting a minimum height
+  width: 100%; // Ensuring it takes full width
   padding: 20px;
   filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
-
-  & img {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    right: 0;
-    &:nth-child(1) {animation-delay: 0s;}
-    &:nth-child(2) {animation-delay: 1s;}
-  }
-
-  & > div {
-    padding: 0px;
-    filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
-  }
-
-  @media (min-width: 800px) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 0;
-    & > div {
-      padding: 40px;
-    }
-  }
 `
 
 export function WelcomeBanner() {
   return (
-    <Welcome>
-      <div>
-        <h1>Welcome to Frogs on Gamble 👋</h1>
-        <p>
-          A fair, simple and decentralized casino on Solana.
-        </p>
-      </div>
+    <div> {/* Wrapper div to contain both components */}
+      <Welcome>
+        <div>
+          <h1>Welcome to Frogs on Gamble 👋</h1>
+          <p>
+            A fair, simple, and decentralized casino on Solana.
+          </p>
+        </div>
+      </Welcome>
       <Buttons>
         <button onClick={() => window.open('https://twitter.com/frogsongamble', '_blank')}>
-          🐸 Follow us Twitter
+          🐸 Follow us on Twitter
         </button>
         <button onClick={() => window.open('https://discord.gg/VPWMksvQ', '_blank')}>
           💬 Join Discord
         </button>
       </Buttons>
-    </Welcome>
+    </div>
   )
 }
