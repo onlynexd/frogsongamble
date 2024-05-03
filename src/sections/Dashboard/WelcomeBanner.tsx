@@ -61,7 +61,7 @@ export function WelcomeBanner() {
         <button onClick={() => window.open('https://twitter.com/frogsongamble', '_blank')}>
           🐸 Follow us on Twitter
         </button>
-        <button onClick={() => window.open('https://discord.gg/VPWMksvQ', '_blank')}>
+        <button onClick={() => window.open('https://discord.gg/6taVeGaPf6', '_blank')}>
           💬 Join Discord
         </button>
         <button onClick={() => window.open('https://zealy.io/cw/frogsongamble', '_blank')}>
