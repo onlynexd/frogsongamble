@@ -64,6 +64,9 @@ export function WelcomeBanner() {
         <button onClick={() => window.open('https://discord.gg/VPWMksvQ', '_blank')}>
           💬 Join Discord
         </button>
+        <button onClick={() => window.open('https://discord.gg/VPWMksvQ', '_blank')}>
+          💬 Join Zealy & Earn Airdrop?
+        </button>
       </Buttons>
     </div>
   )
