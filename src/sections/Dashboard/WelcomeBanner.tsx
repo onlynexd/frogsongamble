@@ -65,7 +65,7 @@ export function WelcomeBanner() {
           💬 Join Discord
         </button>
         <button onClick={() => window.open('https://zealy.io/cw/frogsongamble', '_blank')}>
-          💬 Join Zealy & Earn Airdrop?
+          📃 Join Zealy & Earn Airdrop?
         </button>
       </Buttons>
     </div>
