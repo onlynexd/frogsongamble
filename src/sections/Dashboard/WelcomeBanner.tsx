@@ -52,9 +52,8 @@ export function WelcomeBanner() {
     <div> {/* Wrapper div to contain both components */}
       <Welcome>
         <div>
-          <h1>Welcome to Frogs on Gamble 👋</h1>
+          <h1></h1>
           <p>
-            A fair, simple, and decentralized casino on Solana.
           </p>
         </div>
       </Welcome>
