@@ -37,6 +37,10 @@ export const POOLS = [
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
+  // BONK:
+  lp('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
+  // JUP:
+  lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
   // Fake token:
   lp(FAKE_TOKEN_MINT),
 ]
@@ -56,6 +60,24 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     image: '/fakemoney.png',
     baseWager: 1e9,
     decimals: 9,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
+    name: 'Bonk',
+    symbol: 'BONK',
+    image: 'https://statics.solscan.io/cdn/imgs/s60?ref=68747470733a2f2f617277656176652e6e65742f685169505a4f73525a584758424a645f3832506856646c4d5f68414373545f713677717766356353593749',
+    baseWager: 10000 * 1e5,
+    decimals: 5,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
+    name: 'Jupiter',
+    symbol: 'JUP',
+    image: 'https://statics.solscan.io/cdn/imgs/s60?ref=68747470733a2f2f7374617469632e6a75702e61672f6a75702f69636f6e2e706e67',
+    baseWager: 1e6,
+    decimals: 6,
     usdPrice: 0,
   },
 ]
