@@ -41,8 +41,6 @@ export const POOLS = [
   lp('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
   // JUP:
   lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
-  // Fake token:
-  lp(FAKE_TOKEN_MINT),
 ]
 
 // The default token to be selected
@@ -53,15 +51,6 @@ export const DEFAULT_POOL = POOLS[0]
  * Alternatively, we can provide a fetcher method to automatically fetch metdata. See TOKEN_METADATA_FETCHER below.
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
-  {
-    mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FROGS',
-    image: '/fakemoney.png',
-    baseWager: 1e9,
-    decimals: 9,
-    usdPrice: 0,
-  },
   {
     mint: new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
     name: 'Bonk',
