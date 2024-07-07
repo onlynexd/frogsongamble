@@ -6,17 +6,17 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  '7uSEEcSgbtsBC2NTdqE7qKpZifKDFVT2gfCx76BtcVdN'
+  'V2grJiwjs25iJYqumbHyKo5MTK7SFqZSdmoRaj8QWb9',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
-export const EXPLORER_URL = `https://explorer.gamba.so/`;
+export const EXPLORER_URL = 'https://explorer.gamba.so'
 
 // Platform URL - Appears in ShareModal
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.05 // 1% (1/100 = 0.01)
+export const PLATFORM_CREATOR_FEE = 0.01 // 1% (1/100 = 0.01)  !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1% (0.1/100 = 0.001)
@@ -33,14 +33,14 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
+  // Fake token:
+  lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
-  // BONK:
-  lp('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
-  // JUP:
-  lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
+  // Wormhole:
+  lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
 ]
 
 // The default token to be selected
@@ -52,24 +52,37 @@ export const DEFAULT_POOL = POOLS[0]
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
-    mint: new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
-    name: 'Bonk',
-    symbol: 'BONK',
-    image: 'https://statics.solscan.io/cdn/imgs/s60?ref=68747470733a2f2f617277656176652e6e65742f685169505a4f73525a584758424a645f3832506856646c4d5f68414373545f713677717766356353593749',
-    baseWager: 10000 * 1e5,
-    decimals: 5,
+    mint: FAKE_TOKEN_MINT,
+    name: 'Fake',
+    symbol: 'FAKE',
+    image: '/fakemoney.png',
+    baseWager: 1e9,
+    decimals: 9,
     usdPrice: 0,
   },
   {
-    mint: new PublicKey('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
-    name: 'Jupiter',
-    symbol: 'JUP',
-    image: 'https://statics.solscan.io/cdn/imgs/s60?ref=68747470733a2f2f7374617469632e6a75702e61672f6a75702f69636f6e2e706e67',
+    mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
+    name: 'W',
+    symbol: 'Wormhole',
+    image: 'https://wormhole.com/token.png',
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
   },
 ]
+
+/** HTML to display to user that they need to accept in order to continue */
+export const TOS_HTML = `
+  <p><b>1. Age Requirement:</b> Must be at least 18 years old.</p>
+  <p><b>2. Legal Compliance:</b> Follow local laws responsibly.</p>
+  <p><b>3. Risk Acknowledgement:</b> Games involve risk; no guaranteed winnings.</p>
+  <p><b>4. No Warranty:</b> Games provided "as is"; operate randomly.</p>
+  <p><b>5. Limitation of Liability:</b> We're not liable for damages.</p>
+  <p><b>6. Licensing Disclaimer:</b> Not a licensed casino; for simulation only.</p>
+  <p><b>7. Fair Play:</b> Games are conducted fairly and transparently.</p>
+  <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
+  <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>
+`
 
 /**
  * A method for automatically fetching Token Metadata.
