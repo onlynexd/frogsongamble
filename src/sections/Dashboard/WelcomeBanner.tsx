@@ -1,29 +1,36 @@
+import { useWallet } from '@solana/wallet-adapter-react'
+import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import React from 'react'
 import styled from 'styled-components'
-import { EXPLORER_URL } from '../../constants'
+import { useUserStore } from '../../hooks/useUserStore'
 
 const Buttons = styled.div`
+  overflow: hidden;
   display: flex;
-  justify-content: center; // Centering the buttons horizontally
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
-  padding: 20px 0; // Adding padding for spacing
 
   @media (min-width: 800px) {
-    flex-direction: row; // Buttons side by side on larger screens
+    height: 100%;
   }
 
   @media (max-width: 800px) {
-    flex-direction: row; // Buttons side by side on smaller screens
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    padding-top: 0!important;
   }
 
   & > button {
     border: none;
-    min-width: 150px; // Ensuring buttons have a minimum width
+    width: 100%;
     border-radius: 10px;
     padding: 10px;
     background: #ffffffdf;
-    transition: background .2s ease;
+    transition: background-color .2s ease;
     color: black;
     cursor: pointer;
     &:hover {
@@ -33,41 +40,97 @@ const Buttons = styled.div`
 `
 
 const Welcome = styled.div`
-  background: url('banner.png') no-repeat center center;
-  background-size: cover;
+  @keyframes welcome-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes backgroundGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
+  background-size: 300% 300%;
+  animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
   border-radius: 10px;
   position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column; // Changed to column to stack elements vertically
-  align-items: center; // Centering content horizontally
+  align-items: center;
   justify-content: center;
-  min-height: 300px; // Setting a minimum height
-  width: 100%; // Ensuring it takes full width
+  flex-direction: column;
   padding: 20px;
   filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
+
+  & img {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    &:nth-child(1) {animation-delay: 0s;}
+    &:nth-child(2) {animation-delay: 1s;}
+  }
+
+  & > div {
+    padding: 0px;
+    filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
+  }
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0;
+    & > div {
+      padding: 40px;
+    }
+  }
 `
 
 export function WelcomeBanner() {
+  const wallet = useWallet()
+  const walletModal = useWalletModal()
+  const store = useUserStore()
+  const copyInvite = () => {
+    store.set({ userModal: true })
+    if (!wallet.connected) {
+      walletModal.setVisible(true)
+    }
+  }
+
   return (
-    <div> {/* Wrapper div to contain both components */}
-      <Welcome>
-        <div>
-          <h1></h1>
-          <p>
-          </p>
-        </div>
-      </Welcome>
+    <Welcome>
+      <div>
+        <h1>Welcome to Gamba v2 👋</h1>
+        <p>
+          A fair, simple and decentralized casino on Solana.
+        </p>
+      </div>
       <Buttons>
-        <button onClick={() => window.open('https://twitter.com/frogsongamble', '_blank')}>
-          🐸 Follow us on Twitter
+        <button onClick={copyInvite}>
+          💸 Copy Invite
         </button>
-        <button onClick={() => window.open('https://discord.gg/6taVeGaPf6', '_blank')}>
-          💬 Join Discord
+        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
+          🚀 Add Liquidity
         </button>
-        <button onClick={() => window.open('https://zealy.io/cw/frogsongamble', '_blank')}>
-          📃 Join Zealy & Earn Airdrop?
+        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
+          💬 Discord
         </button>
       </Buttons>
-    </div>
+    </Welcome>
   )
 }

@@ -115,6 +115,7 @@ export const Controls = styled.div`
   padding: 20px;
   color: white;
   border-radius: 10px;
+  z-index: 6;
 
   @media (max-width: 800px) {
     padding: 10px;
@@ -128,6 +129,18 @@ export const Controls = styled.div`
     align-items: center;
     height: 80px;
   }
+`
+
+export const MetaControls = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  z-index: 6;
 `
 
 export const spinnerAnimation = keyframes`

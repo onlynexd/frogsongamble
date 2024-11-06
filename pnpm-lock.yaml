@@ -42,14 +42,14 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       gamba-core-v2:
-        specifier: ^0.3.0
-        version: 0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+        specifier: 0.4.0
+        version: 0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       gamba-react-ui-v2:
-        specifier: ^0.4.5
-        version: 0.4.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-react@0.3.7(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(utf-8-validate@5.0.10)
+        specifier: 0.7.0
+        version: 0.7.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-react@0.3.7(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(utf-8-validate@5.0.10)
       gamba-react-v2:
-        specifier: ^1.1.3
-        version: 1.1.3(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core-v2@0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)(utf-8-validate@5.0.10)
+        specifier: 1.2.0
+        version: 1.2.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core-v2@0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)(utf-8-validate@5.0.10)
       html2canvas:
         specifier: ^1.4.1
         version: 1.4.1
@@ -3149,11 +3149,11 @@ packages:
   functions-have-names@1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
 
-  gamba-core-v2@0.3.0:
-    resolution: {integrity: sha512-wcqgcaYWX6evhRfB2BrRj+O66cYyAF+7jy7nctSU8kXec5H9KltvwfMk/V0lu1zg3DCUMH2RHX0QS6V0cI5RXA==}
+  gamba-core-v2@0.4.0:
+    resolution: {integrity: sha512-y2z5fhVHR6BbYtQO6kosiXIWNUqE0RwcfLfQEj3FmMjqkXZ1GJev6FSSCQW2YD6e1Da/sQYJcyNxxz/z3bjRUQ==}
     peerDependencies:
       '@coral-xyz/anchor': ^0.27.0
-      '@solana/web3.js': ^1.78.5
+      '@solana/web3.js': ^1.93.0
 
   gamba-core@0.5.5:
     resolution: {integrity: sha512-Lb0OWMBytj3kj9KDTbK2HcCHxGLO5vvrvVH4dNEvm5htgmoU1Gv2cd0FGma1qfjz/b0byD0rslsSuEb0WRrmPA==}
@@ -3161,28 +3161,28 @@ packages:
       '@coral-xyz/anchor': '*'
       '@solana/web3.js': '*'
 
-  gamba-react-ui-v2@0.4.5:
-    resolution: {integrity: sha512-soUCYgsl2msEjUOD2e9vBtnB98X5ArckDFplLCcWEJXlGct9VToBxBUJ38YJt6qPFqjWEeGrlIGXAJDAXxQQsw==}
+  gamba-react-ui-v2@0.7.0:
+    resolution: {integrity: sha512-0EMaZCJDxFWcoCc6LFxmSVcAy4JrWdKGYVA+h8yswk4fuklU9FJqrQA/GI6mra/UcqxZ9REFOz91prR4WP04PA==}
     peerDependencies:
       '@coral-xyz/anchor': ^0.27.0
       '@solana/wallet-adapter-react': ^0.15.35
-      '@solana/web3.js': ^1.78.5
+      '@solana/web3.js': ^1.93.0
       gamba-core: '*'
       gamba-react: '*'
-      react: ^18.2.0
-      react-dom: ^18.2.0
+      react: ^18.3.1
+      react-dom: ^18.3.1
     peerDependenciesMeta:
       '@solana/wallet-adapter-react':
         optional: true
 
-  gamba-react-v2@1.1.3:
-    resolution: {integrity: sha512-ikESg1s5J1k4eR7uZPGE5yDcvXqzuvIfeXSK9fHsXDMI85J2xdcVlwL5jJzdwnU/ZKznheV36mAm7HdWyNdNWA==}
+  gamba-react-v2@1.2.0:
+    resolution: {integrity: sha512-lHMP4e2t0e75p+P4AIT8POFwBM6c2wFByi9dHaB2iRRcSMgKLhTDL9Ei1xoOQ2vXHQ2ki7iga/jRg75YyLX06A==}
     peerDependencies:
       '@coral-xyz/anchor': ^0.27.0
       '@solana/wallet-adapter-react': ^0.15.35
-      '@solana/web3.js': ^1.78.5
+      '@solana/web3.js': ^1.93.0
       gamba-core-v2: '*'
-      react: ^18.2.0
+      react: ^18.3.1
     peerDependenciesMeta:
       '@solana/wallet-adapter-react':
         optional: true
@@ -4544,10 +4544,12 @@ packages:
 
   rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   ripemd160@2.0.2:
@@ -5339,6 +5341,7 @@ packages:
 
   workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
 
   workbox-navigation-preload@7.0.0:
     resolution: {integrity: sha512-juWCSrxo/fiMz3RsvDspeSLGmbgC0U9tKqcUPZBCf35s64wlaLXyn2KdHHXVQrb2cqF7I0Hc9siQalainmnXJA==}
@@ -9572,7 +9575,7 @@ snapshots:
 
   functions-have-names@1.2.3: {}
 
-  gamba-core-v2@0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10):
+  gamba-core-v2@0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10):
     dependencies:
       '@coral-xyz/anchor': 0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@solana/spl-token': 0.3.8(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -9592,15 +9595,16 @@ snapshots:
       - encoding
       - utf-8-validate
 
-  ? gamba-react-ui-v2@0.4.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-react@0.3.7(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(utf-8-validate@5.0.10)
+  ? gamba-react-ui-v2@0.7.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-react@0.3.7(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(utf-8-validate@5.0.10)
   : dependencies:
       '@coral-xyz/anchor': 0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@preact/signals-react': 1.3.8(react@18.2.0)
+      '@solana/spl-token': 0.3.8(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       gamba-core: 0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      gamba-core-v2: 0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+      gamba-core-v2: 0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       gamba-react: 0.3.7(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(gamba-core@0.5.5(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)
-      gamba-react-v2: 1.1.3(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core-v2@0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)(utf-8-validate@5.0.10)
+      gamba-react-v2: 1.2.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core-v2@0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)(utf-8-validate@5.0.10)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       styled-components: 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9617,13 +9621,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  gamba-react-v2@1.1.3(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core-v2@0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)(utf-8-validate@5.0.10):
+  gamba-react-v2@1.2.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/wallet-adapter-react@0.15.35(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.73.4(@babel/core@7.23.9)(@babel/preset-env@7.23.9(@babel/core@7.23.9))(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@types/react@18.2.22)(bufferutil@4.0.8)(gamba-core-v2@0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10))(react@18.2.0)(utf-8-validate@5.0.10):
     dependencies:
       '@coral-xyz/anchor': 0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@preact/signals-react': 1.3.8(react@18.2.0)
       '@solana/spl-token': 0.3.8(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      gamba-core-v2: 0.3.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+      gamba-core-v2: 0.4.0(@coral-xyz/anchor@0.27.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@solana/web3.js@1.78.5(bufferutil@4.0.8)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       react: 18.2.0
       swr: 2.2.4(react@18.2.0)
       zustand: 4.5.0(@types/react@18.2.22)(react@18.2.0)
