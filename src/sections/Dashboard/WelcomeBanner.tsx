@@ -121,7 +121,6 @@ export function WelcomeBanner() {
         </p>
       </div>
       <Buttons>
-<<<<<<< HEAD
         <button onClick={copyInvite}>
           💸 Copy Invite
         </button>
@@ -130,16 +129,6 @@ export function WelcomeBanner() {
         </button>
         <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
           💬 Discord
-=======
-        <button onClick={() => window.open('https://twitter.com/solplaycasino', '_blank')}>
-           Follow us on Twitter
-        </button>
-        <button onClick={() => window.open('https://discord.gg', '_blank')}>
-          💬 Join Discord SOON!
-        </button>
-        <button onClick={() => window.open('https://web.telegram.org/a/', '_blank')}>
-           Play Gambling Telegram BOT SOON!
->>>>>>> 268ad39def88cc911014e677bfa63fbba7e87aa7
         </button>
       </Buttons>
     </Welcome>
