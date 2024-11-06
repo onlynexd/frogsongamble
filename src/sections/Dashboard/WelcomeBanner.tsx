@@ -58,14 +58,14 @@ export function WelcomeBanner() {
         </div>
       </Welcome>
       <Buttons>
-        <button onClick={() => window.open('https://twitter.com/frogsongamble', '_blank')}>
-          🐸 Follow us on Twitter
+        <button onClick={() => window.open('https://twitter.com/solplaycasino', '_blank')}>
+           Follow us on Twitter
         </button>
-        <button onClick={() => window.open('https://discord.gg/6taVeGaPf6', '_blank')}>
-          💬 Join Discord
+        <button onClick={() => window.open('https://discord.gg', '_blank')}>
+          💬 Join Discord SOON!
         </button>
-        <button onClick={() => window.open('https://zealy.io/cw/frogsongamble', '_blank')}>
-          📃 Join Zealy & Earn Airdrop?
+        <button onClick={() => window.open('https://web.telegram.org/a/', '_blank')}>
+           Play Gambling Telegram BOT SOON!
         </button>
       </Buttons>
     </div>
